@@ -1,0 +1,14 @@
+@use "sass:map";
+
+.intro-section {
+  p {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    font-size: 18px;
+    color: map.get($theme-colors, "Kelp");
+    font-family: map.get($typo-family, "roboto");
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto;
+  }
+}

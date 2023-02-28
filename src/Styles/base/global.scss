@@ -1,0 +1,27 @@
+@use "sass:map";
+
+.no-side-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+h2 {
+  color: map.get($theme-colors, "rangoon-black");
+  font-size: 32px;
+  text-transform: uppercase;
+  font-family: map.get($typo-family, "roboto");
+  margin-bottom: 20px;
+}
+
+.custom-btn {
+  padding: 8px 20px;
+  color: map.get($theme-colors, "white");
+  background-color: map.get($theme-colors, "PersianGreen");
+  text-transform: uppercase;
+  font-size: 16px;
+  border: 0;
+
+  &:hover {
+    background-color: map.get($theme-colors, "tundora");
+  }
+}

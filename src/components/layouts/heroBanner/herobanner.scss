@@ -1,0 +1,48 @@
+@use "sass:map";
+
+.hero-section {
+  background-color: map.get($theme-colors, "yellow");
+  padding-top: 60px;
+  padding-bottom: 100px;
+
+  .carousel {
+
+    .carousel-inner {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+  .hero-img {
+    text-align: center;
+    padding-right: 20px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .slide-text {
+    padding: 0 74px;
+    align-self: center;
+
+    h2 {
+      font-size: 40px;
+      font-family: map.get($typo-family, "roboto");
+      font-weight: 400;
+    }
+
+    p {
+      font-family: map.get($typo-family, "roboto");
+      font-size: 24px;
+      color: map.get($theme-colors, "PersianGreen");
+      font-weight: 400;
+    }
+  }
+
+  .carousel-indicators {
+    margin-bottom: 0;
+    bottom: -60px;
+  }
+}

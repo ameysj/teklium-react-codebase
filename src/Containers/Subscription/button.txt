@@ -1,0 +1,41 @@
+<div id="paypal-button-container-P-52J569338B540331AMJCUHJY"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AfvNB74pzmdpkQ2hjcWhxV9xpsn07e8jdOy4u5p5WJJFrDSrE1K7OQHoi1ag2QcCrce2vthlmDpLfMWq&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'pill',
+          color: 'white',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-52J569338B540331AMJCUHJY',
+          quantity: 1 // The quantity of the product for a subscription
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-52J569338B540331AMJCUHJY'); // Renders the PayPal button
+</script>
+
+
+
+  const paypalSubscribe = (data, actions) => {
+    return actions.subscription.create({
+      'plan_id': "P-52J569338B540331AMJCUHJY",
+      });
+    };
+
+    const paypalOnError = (err) => {
+        console.log("Error")
+    }
+    const paypalOnApprove = (data, detail) => {
+      // call the backend api to store transaction details
+      console.log("Payapl approved")
+      console.log(data.subscriptionID)
+    };
+
+     /**card?.price && */

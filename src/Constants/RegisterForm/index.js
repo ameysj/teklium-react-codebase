@@ -1,0 +1,5 @@
+export const successMsg = 'Success :Your Email has Been Registered, a verification code has been sent to your email'
+export const successMsg2 = 'Success : Your Email has been verified'
+export const ExistMsg = 'An account with the given email already exists.'
+export const VerifiedExistsMsg = 'User cannot be confirmed. Current status is CONFIRMED'
+export const ShowVerifiedMsg = 'Your Email ID Is already Verified'

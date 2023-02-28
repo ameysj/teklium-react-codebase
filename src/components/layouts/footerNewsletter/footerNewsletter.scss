@@ -1,0 +1,23 @@
+@use "sass:map";
+
+.footer-newsletter {
+  color: map.get($theme-colors, "white");
+  font-family: map.get($typo-family, "roboto");
+
+  h3 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 15px;
+    font-family: map.get($typo-family, "roboto");
+    font-weight: 400;
+  }
+
+  .newsletter-form {
+    input[type="email"] {
+      height: 40px;
+      margin-bottom: 20px;
+    }
+  }
+}

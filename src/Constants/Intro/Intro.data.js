@@ -1,0 +1,1 @@
+export const introData ='Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus';

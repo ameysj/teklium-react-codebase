@@ -1,0 +1,12 @@
+@use "sass:map";
+
+header {
+  background-color: map.get($theme-colors, "white");
+  color: map.get($theme-colors, "white");
+
+  @media (min-width: 992px) {
+    .container {
+      display: none;
+    }
+  }
+}

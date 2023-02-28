@@ -1,0 +1,47 @@
+@use "sass:map";
+
+.navbar.main-navigation {
+  padding-top: 20px;
+  padding-bottom: 25px;
+
+  > .container {
+    padding: 0 12px;
+  }
+
+  @include media("<=tablet") {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+
+  .site-logo {
+    max-width: 160px;
+
+    @include media("<=tablet") {
+      max-width: 100px;
+    }
+  }
+  .menu-link {
+    justify-content: flex-end;
+
+    li {
+      a {
+        font-size: 15px;
+        color: map.get($theme-colors, "tundora");
+        font-family: map.get($typo-family, "roboto");
+        font-weight: 400;
+        margin: 0 15px;
+
+        &:hover {
+          color: map.get($theme-colors, "PersianGreen");
+        }
+      }
+
+      &:last-child {
+        a {
+          padding-right: 0;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

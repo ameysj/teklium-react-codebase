@@ -1,0 +1,42 @@
+@use "sass:map";
+
+.footer-address {
+  font-size: 14px;
+  color: map.get($theme-colors, "white");
+  font-family: map.get($typo-family, "roboto");
+
+  i {
+    margin-right: 10px;
+  }
+
+  .landmark {
+    max-width: 250px;
+  }
+
+  .footer-logo img {
+    width: 160px;
+    margin-bottom: 30px;
+  }
+
+  .footer-email {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: map.get($theme-colors, "white");
+    font-family: map.get($typo-family, "roboto");
+  }
+
+  .footer-phone {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: map.get($theme-colors, "white");
+    font-family: map.get($typo-family, "roboto");
+  }
+
+  .street-address {
+    font-size: 14px;
+    color: map.get($theme-colors, "white");
+    font-family: map.get($typo-family, "roboto");
+    display: flex;
+    margin-bottom: 15px;
+  }
+}

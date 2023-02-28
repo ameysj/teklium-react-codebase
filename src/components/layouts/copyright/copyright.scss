@@ -1,0 +1,15 @@
+@use "sass:map";
+
+.copy-right {
+  background: map.get($theme-colors, "rangoon-green");
+  padding: 20px 0;
+  color: map.get($theme-colors, "white");
+  text-decoration: none;
+  font-size: 14px;
+  font-family: map.get($typo-family, "roboto");
+  font-weight: 400;
+
+  .copyright-brand {
+    color: map.get($theme-colors, "PersianGreen");
+  }
+}
