@@ -13,7 +13,7 @@ on:
       - '**/*.tsx'
       - 'package.json'
       - 'package-lock.json'
-      - '!.github/workflows/**'
+      - '.github/workflows/jest.yml'
   # Run tests after merge and collect coverage as canonical source of truth
   push:
     # Your production branch. If not the default, update here and set Target Branch at https://gitauto.ai/dashboard/rules to match
